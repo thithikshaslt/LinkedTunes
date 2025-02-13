@@ -46,11 +46,7 @@ int Playlist :: addNode()
         ptr=start;
         file.open("songs.txt",ios :: app);
         if(!file)
-        {
-        //	cout << "rtwff";
-        	return 0;
-		}
-               // return 0;
+                return 0;
         else
         {
                 char a[50];
@@ -171,7 +167,6 @@ void Playlist :: play(node* ptr)
                 if(strcmp(ptr -> song,song)==0)
                 {
                         cout<<"\n\a\a\a\a=>Now Playing......"<<song<<endl;
-                        //PlaySound(TEXT("Aval.wav"),NULL,SND_FILENAME|SND_ASYNC);
                         if(strcmp(ptr -> song,"Aval") == 0)
                         {
                         	PlaySound(TEXT("Aval.wav"),NULL,SND_FILENAME|SND_ASYNC);
@@ -182,7 +177,6 @@ void Playlist :: play(node* ptr)
                         		PlaySound(0,0,0);
 							}
 						}
-                        	//PlaySound(TEXT("Aval.wav"),NULL,SND_FILENAME|SND_ASYNC);
                         else if(strcmp(ptr -> song,"Chillena") == 0)
                         {
                         	PlaySound(TEXT("Chillena.wav"),NULL,SND_FILENAME|SND_ASYNC);
@@ -318,9 +312,6 @@ int main()
         start=n;
         start -> fwd = NULL;
         start -> bwd = NULL;
-        //PlaySound(TEXT("karma_tswift.wav"),NULL,SND_FILENAME|SND_ASYNC);
-        //PlaySound(TEXT("Aval.wav"),NULL,SND_FILENAME|SND_ASYNC);
-        //system("pause");
         do{
                 cout << "\n1. To add a new song\n2. To delete a song\n3. To Display Entered Playlist\n4.To display the total number of songs\n5.To Search for a Song\n6.To play a song\n7.To display recently played songs\n8.To display last played song\n9.To exit\n";
                 cout << "\nEnter your choice- ";
@@ -344,7 +335,6 @@ int main()
             case 8:obj.topElement();
             break;
             case 9:file.open("songs.txt",ios :: out);
-       // file.seekp(0);
 		file.close();
 			return 0;
         default: cout << "Invalid choice. Please enter a valid choice from 1-9." << endl;
