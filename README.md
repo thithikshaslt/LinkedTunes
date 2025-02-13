@@ -71,5 +71,5 @@ Project1/
 - If the songs do not play, check if the filenames in `main.cpp` match exactly.
 
 ---
-
+## Note
 - Ensure `-lwinmm` is linked in the compiler options.
