@@ -27,11 +27,6 @@ Project1/
 │── Project1.dev         # Dev-C++ project file
 │── main.cpp             # Main source code
 │── songs.txt            # Stores playlist songs
-│── Aval.wav             # Sample song files
-│── Chillena.wav
-│── Munbe_Vaa.wav
-│── Thuli_Thuli.wav
-│── Anbil_Avan.wav
 │── Project1.exe         # Compiled executable (generated after build)
 ```
 
