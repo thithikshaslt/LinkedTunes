@@ -61,7 +61,7 @@ Project1/
 
 ---
 
-## 🎵 Placing Audio Files
+## Placing Audio Files
 - `.wav` files should be placed **in the same directory as `Project1.exe`**.
 - If the songs do not play, check if the filenames in `main.cpp` match exactly.
 
